@@ -13,7 +13,7 @@ struct ContentView: View {
 			
 			VStack {
 				if isTextShowing {
-					Text("Hello, World! XCode13 Branch.")
+					Text("Hello, World!")
 						.padding()
 				} else {
 					Text("")
