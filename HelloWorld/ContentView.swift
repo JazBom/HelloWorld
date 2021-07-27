@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var isTextShowing = true
     var body: some View {
 			
 			VStack {
-				Text("Hello, World!")
-					.padding()
+				if isTextShowing {
+					Text("Hello, World!")
+						.padding()
+				} else {
+					Text("")
+						.padding()
+				}
 				Button(action: {
-					
+					isTextShowing.toggle()
 				}){
 					Text("Button")
 				}
